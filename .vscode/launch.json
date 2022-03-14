@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: simclr",
+            "type": "python",
+            "request": "launch",
+            "program": "simclr.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--config_env=configs/env.yml",
+                "--config_exp=configs/pretext/simclr_cifar10.yml"
+            ]
+        },
+        {
+            "name": "Python: scan",
+            "type": "python",
+            "request": "launch",
+            "program": "scan.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--config_env=configs/env.yml",
+               " --config_exp=configs/scan/scan_cifar10.yml"
+            ]
+        },
+        {
+            "name": "Python: self-label",
+            "type": "python",
+            "request": "launch",
+            "program": "selflabel.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--config_env=configs/env.yml",
+                "--config_exp=configs/selflabel/selflabel_cifar10.yml"
+            ]
+        }
+    ]
+}
